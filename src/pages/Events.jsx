@@ -21,17 +21,20 @@ const Events = () => {
                 <EventCard 
                     title={"Vintage Clothing Pop-Up"} 
                     location={"2nd Pl. and Court St, Brooklyn, NY"}
+                    desc={'Explore a curated selection of vintage clothing from the 60s, 70s, and 80s. Perfect for fashion enthusiasts and collectors! Dont miss out on unique pieces and great deals'}
                     date={" August 15, 2024"} 
                     time= {"11:00 AM - 5:00 PM"}/>
                 <EventCard 
                     title={"Handmade Crafts Fair"}
                     location={"2nd Pl. and Court St, Brooklyn, NY"}
+                    desc={'Support local artisans and discover a variety of handmade crafts including jewelry, pottery, and home decor. Perfect for finding unique gifts and adding a touch of creativity to your home.'}
                     date={" September 10, 2024"} 
                     time= {"10:00 AM - 3:00 PM"}
                 />
                 <EventCard 
                     title={"Book and Music Swap"}
                     location={"2nd Pl. and Court St, Brooklyn, NY"}
+                    desc={'Bring your gently used books and music (vinyl, CDs, etc.) to swap with fellow enthusiasts. A great way to refresh your collection and discover new favorites. All genres welcome!'}
                     date={" October 5, 2024"} 
                     time= {"12:00 PM - 4:00 PM"}/>
             </section>

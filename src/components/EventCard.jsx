@@ -10,14 +10,16 @@ const EventCard = (props) => {
             className='text-[50px] items-center tracking-normal shadow-solid shadow-text text-shadow color-3 p-5 flex justify-between px-4 text-blue-500 poppins font-semibold'
             >
               <p className='w-full px-5'>{props.title}</p>
-              <p className='text-xl w-full tracking-normal text-fuchsia-600'>Explore a curated selection of vintage clothing from the 60s, 70s, and 80s. Perfect for fashion enthusiasts and collectors! Don't miss out on unique pieces and great deals.</p>
+              <p className='text-xl w-full tracking-normal text-fuchsia-600'>
+                {props.desc}
+            </p>
               <motion.button
                 whileHover={{y:-10}}
                 animate={{opacity:1, y:0}}
                 initial={{opacity:0,y:50}}
                 onClick={()=>{setShowCard(true)}}
                 transition={{duration:0.8, type:'spring', stiffness:200}}
-                className='text-[20px] shadow-text justify-end flex w-full text-neutral-100 poppins font-semibold'>
+                className='text-[20px] shadow-text justify-end pr-9 flex w-full text-neutral-100 poppins font-semibold'>
                     <p className='color-4 w-fit px-5 py-2 rounded-xl shadow-solid'>See Details</p>
             </motion.button>
 
