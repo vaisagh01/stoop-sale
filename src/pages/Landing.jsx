@@ -9,7 +9,7 @@ const Landing = () => {
   const navigate = useNavigate();
   return (
     <div className='h-screen flex z-10'>
-        <img className='-z-20 w-screen absolute top-0' src="/img4.png" alt="" />
+        <img className='-z-20 w-screen absolute top-0' src="/background-1.avif" alt="" />
         <div className='w-1/2 flex  h-screen'>
           <motion.img
           className='w-80'
