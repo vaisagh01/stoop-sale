@@ -8,8 +8,8 @@ const Landing = () => {
   }, 800);
   const navigate = useNavigate();
   return (
-    <div className='h-screen flex z-10'>
-        <img className='-z-20 w-screen absolute top-0' src="/background-1.avif" alt="" />
+    <div className='flex z-50'>
+        {/* <img className='-z-20 w-screen absolute top-0' src="/background-1.avif" alt="" /> */}
         <div className='w-1/2 flex  h-screen'>
           <motion.img
           className='w-80'
@@ -35,8 +35,8 @@ const Landing = () => {
             animate={{opacity:1, y:0}}
             initial={{opacity:0,y:50}}
             transition={{duration:0.3}}
-            className='text-[124px] relative flex rounded-xl text-shadow color-4 px-4 shadow-solid text-[#874170] -tracking-widest font-bold'>
-              Chelsea & lil's
+            className='text-[124px] relative flex rounded-xl shadow-text color-4 px-4 shadow-solid text-[#874170] -tracking-widest font-bold'>
+              Chelsea & lil's 
               <motion.img 
                 initial={{y:-10}}
                 animate={{y:0}}
