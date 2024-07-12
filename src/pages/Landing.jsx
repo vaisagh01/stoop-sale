@@ -37,18 +37,7 @@ const Landing = () => {
             transition={{duration:0.3}}
             className='text-[130px] relative flex rounded-xl shadow-text color-4 px-4 shadow-solid text-[#874170] -tracking-widest font-bold'>
               Stoop scoop
-              <motion.img 
-                initial={{y:-10}}
-                animate={{y:0}}
-                transition={{type:'spring', delay:0.2, }}
-                className='absolute h-24 bottom-0 right-16'
-                src="/peeps5.png" alt="" />
-              <motion.img 
-                initial={{y:-10}}
-                animate={{y:0}}
-                transition={{type:'spring', delay:0.2, }}
-                className='absolute bottom-0 right-10 -scale-150 h-24'
-                src="/peeps6.png" alt="" />
+              
             </motion.h1>
             <motion.h1
               whileHover={{backgroundColor: '#58cbb8', color: '#d1ff91'}}
