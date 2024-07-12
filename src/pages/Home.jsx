@@ -12,6 +12,7 @@ const Home = () => {
       offset: ['start end','end start']
     });
     const title = useTransform(scrollYProgress, [0,1],[400,-400])
+    const title2 = useTransform(scrollYProgress, [0,1],[900,-900])
     const banner = useTransform(scrollYProgress, [0,1],[100,-1000])
   return (
     <div ref={container} className='relative'>
@@ -28,6 +29,11 @@ const Home = () => {
         <motion.div style={{y:title}}>
           <Page2 />
         </motion.div>
+
+        <motion.div style={{y:title2}}>
+          <Page3 />
+        </motion.div>
+
     </div>
   )
 }
