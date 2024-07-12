@@ -10,7 +10,7 @@ const Landing = () => {
   return (
     <div className='flex z-50'>
         {/* <img className='-z-20 w-screen absolute top-0' src="/background-1.avif" alt="" /> */}
-        <div className='w-1/2 flex  h-screen'>
+        <div className='w-1/2 flex h-screen'>
           <motion.img
           className='w-80'
           onHoverStart={()=>{setHover(1)}}
@@ -29,14 +29,14 @@ const Landing = () => {
           transition={{duration:0.8, delay:0.5, type:'spring', stiffness:200}}
           src={`/peeps${hover}.png`} alt="" />
         </div>
-        <section className='w-1/2 p-5 gap-5 flex flex-col h-screen'>
+        <section className='w-1/2 p-5 gap-5 flex justify-center flex-col h-screen'>
             <motion.h1
             whileHover={{backgroundColor: '#874170', color: '#58cbb8'}}
             animate={{opacity:1, y:0}}
             initial={{opacity:0,y:50}}
             transition={{duration:0.3}}
-            className='text-[124px] relative flex rounded-xl shadow-text color-4 px-4 shadow-solid text-[#874170] -tracking-widest font-bold'>
-              Chelsea & lil's 
+            className='text-[130px] relative flex rounded-xl shadow-text color-4 px-4 shadow-solid text-[#874170] -tracking-widest font-bold'>
+              Stoop scoop
               <motion.img 
                 initial={{y:-10}}
                 animate={{y:0}}
@@ -56,7 +56,7 @@ const Landing = () => {
               initial={{opacity:0,y:50}}
               transition={{duration:0.8, type:'spring', stiffness:200}}
               className='text-[120px] rounded-xl text-shadow color-1 px-4 shadow-solid text-[#58cbb8] poppins -tracking-widest font-semibold'>
-                stoop scoop
+                Brooklyn, NY
             </motion.h1>
 
             <div className='flex flex-col relative'>

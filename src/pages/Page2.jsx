@@ -2,7 +2,7 @@ import React from 'react'
 import { motion } from 'framer-motion'
 const Page2 = () => {
   return (
-    <div className=' flex' >
+    <div className=' flex items-center' >
         <section className='w-1/2 flex gap-5 flex-col p-10 h-screen'>
         <motion.h1
             animate={{opacity:1, y:0}}
