@@ -3,6 +3,7 @@ import './App.css'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import Home from './pages/Home'
 import Lenis from '@studio-freight/lenis'
+import Events from './pages/Events'
 
 function App() {
   useEffect(()=>{
@@ -20,6 +21,7 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path='/' element={<Home/>} />
+          <Route path='/events' element={<Events/>} />
         </Routes>
       </BrowserRouter>
     </div>

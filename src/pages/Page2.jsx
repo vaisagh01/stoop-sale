@@ -16,7 +16,7 @@ const Page2 = () => {
             animate={{opacity:1, y:0}}
             initial={{opacity:0,y:50}}
             transition={{duration:0.8, delay:0.2, type:'spring', stiffness:200}}
-            className='text-[90px] text-shadow color-5 w-fit px-4 shadow-solid text-[#58cbb8] poppins -tracking-widest font-semibold'>
+            className='text-[90px] text-shadow color-3 w-fit px-4 shadow-solid text-red-500 poppins -tracking-widest font-semibold'>
               Basically a garage sale but better!!!
             </motion.h1>
 

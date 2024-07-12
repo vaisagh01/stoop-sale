@@ -1,10 +1,12 @@
 import React, { useState } from 'react'
 import { motion } from 'framer-motion'
+import { useNavigate } from 'react-router-dom';
 const Landing = () => {
   const [hover, setHover] = useState(2);
   setTimeout(() => {
     setHover(1)
   }, 800);
+  const navigate = useNavigate();
   return (
     <div className='h-screen flex z-10'>
         <img className='-z-20 w-screen absolute top-0' src="/img4.png" alt="" />
@@ -33,15 +35,27 @@ const Landing = () => {
             animate={{opacity:1, y:0}}
             initial={{opacity:0,y:50}}
             transition={{duration:0.3}}
-            className='text-[124px] rounded-xl text-shadow color-4 w-fit px-4 shadow-solid text-[#874170] -tracking-widest font-bold'>
+            className='text-[124px] relative flex rounded-xl text-shadow color-4 px-4 shadow-solid text-[#874170] -tracking-widest font-bold'>
               Chelsea & lil's
+              <motion.img 
+              initial={{y:-10}}
+              animate={{y:0}}
+              transition={{type:'spring', delay:0.2, }}
+              className='absolute h-24 bottom-0 right-16'
+              src="/peeps5.png" alt="" />
+              <motion.img 
+              initial={{y:-10}}
+              animate={{y:0}}
+              transition={{type:'spring', delay:0.2, }}
+              className='absolute bottom-0 right-10 -scale-150 h-24'
+              src="/peeps6.png" alt="" />
             </motion.h1>
             <motion.h1
             whileHover={{backgroundColor: '#58cbb8', color: '#d1ff91'}}
             animate={{opacity:1, y:0}}
             initial={{opacity:0,y:50}}
             transition={{duration:0.8, type:'spring', stiffness:200}}
-            className='text-[120px] rounded-xl text-shadow color-1 w-fit px-4 shadow-solid text-[#58cbb8] poppins -tracking-widest font-semibold'>
+            className='text-[120px] rounded-xl text-shadow color-1 px-4 shadow-solid text-[#58cbb8] poppins -tracking-widest font-semibold'>
               stoop sale @
             </motion.h1>
 
@@ -74,6 +88,7 @@ const Landing = () => {
                   whileHover={{x:-30}}
                   initial={{y:-10}}
                   animate={{y:0}}
+                  onClick={()=>{navigate('/events')}}
                   transition={{duration:0.2,type:'spring', delay:0.4,  repeat:Infinity, repeatType:'reverse'}}
                   className=' hover:text-pink-500 hover:bg-white transition-all duration-200 text-3xl rounded-xl text-white font-semibold right-0 bottom-5 color-2 shadow-solid p-5'>
                   Upcoming Events
