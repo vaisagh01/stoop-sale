@@ -11,7 +11,7 @@ const Home = () => {
       target:container,
       offset: ['start end','end start']
     });
-    const title = useTransform(scrollYProgress, [0,1],[200,-200])
+    const title = useTransform(scrollYProgress, [0,1],[400,-400])
     const banner = useTransform(scrollYProgress, [0,1],[100,-1000])
   return (
     <div ref={container} className='relative'>
@@ -19,18 +19,15 @@ const Home = () => {
           <Landing />
         </div>
         <motion.div 
-        style={{x:banner}}
-        className='flex my-5'>
-          <Banner /><Banner /><Banner /><Banner /><Banner /><Banner />
-          <Banner /><Banner /><Banner /><Banner /><Banner /><Banner />
-          <Banner /><Banner /><Banner /><Banner /><Banner /><Banner />
+          style={{x:banner}}
+          className='flex my-5'>
+            <Banner /><Banner /><Banner /><Banner /><Banner /><Banner />
+            <Banner /><Banner /><Banner /><Banner /><Banner /><Banner />
+            <Banner /><Banner /><Banner /><Banner /><Banner /><Banner />
         </motion.div>
         <motion.div style={{y:title}}>
           <Page2 />
         </motion.div>
-        <div>
-          <Page3 />
-        </div>
     </div>
   )
 }

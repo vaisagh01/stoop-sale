@@ -10,7 +10,7 @@ const Page2 = () => {
             initial={{opacity:0,y:50}}
             transition={{duration:0.8, type:'spring', stiffness:200}}
             className='text-[80px] text-shadow color-4 w-fit px-4 shadow-solid text-[#874170] -tracking-widest font-bold'>
-              What even in a stoop sale??
+              What even is a stoop sale??
             </motion.h1>
             <motion.h1
             animate={{opacity:1, y:0}}
