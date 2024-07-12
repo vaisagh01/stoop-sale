@@ -1,18 +1,28 @@
 import React from 'react'
-
+import { motion } from 'framer-motion'
 const Page2 = () => {
   return (
     <div className='h-screen flex'>
         <img className='-z-20 w-screen absolute top-0' src="/background-1.avif" alt="" />
         <section className='w-1/2 flex gap-5 flex-col p-10 h-screen'>
-            <h1 className='text-[90px] -tracking-widest text-[#874170] font-bold'>What is a stoop sale??</h1>
-            <h1 className='text-[50px] -tracking-wider text-[#008080] font-bold'>when people have a garage sale in front of their building / brownstone</h1>
-            <div className='flex items-center'>
-                <h1 className='text-4xl text-[#ef0041] font-bold'>Basically a garage sale but better!!!</h1>
-            </div>
+        <motion.h1
+            animate={{opacity:1, y:0}}
+            initial={{opacity:0,y:50}}
+            transition={{duration:0.8, type:'spring', stiffness:200}}
+            className='text-[80px] text-shadow color-4 w-fit px-4 shadow-solid text-[#874170] -tracking-widest font-bold'>
+              What even in a stoop sale??
+            </motion.h1>
+            <motion.h1
+            animate={{opacity:1, y:0}}
+            initial={{opacity:0,y:50}}
+            transition={{duration:0.8, delay:0.2, type:'spring', stiffness:200}}
+            className='text-[90px] text-shadow color-5 w-fit px-4 shadow-solid text-[#58cbb8] poppins -tracking-widest font-semibold'>
+              Basically a garage sale but better!!!
+            </motion.h1>
+
         </section>
-        <div className='w-1/2 h-screen overflow-hidden'>
-            <img src="/img2.jpg" alt="" />
+        <div className='w-1/2 p-10 h-screen overflow-hidden'>
+            <img src="/44153.jpg" alt="" />
         </div>
     </div>
   )

@@ -27,26 +27,26 @@ const Landing = () => {
           transition={{duration:0.8, delay:0.5, type:'spring', stiffness:200}}
           src={`/peeps${hover}.png`} alt="" />
         </div>
-        <section className='w-1/2 p-5 gap-10 flex flex-col h-screen'>
+        <section className='w-1/2 p-5 gap-5 flex flex-col h-screen'>
             <motion.h1
-            whileHover={{x:-100}}
+            whileHover={{backgroundColor: '#874170', color: '#58cbb8'}}
             animate={{opacity:1, y:0}}
             initial={{opacity:0,y:50}}
-            transition={{duration:0.8, type:'spring', stiffness:200}}
-            className='text-[100px] text-shadow color-4 w-fit px-4 shadow-solid text-[#874170] -tracking-widest font-bold'>
+            transition={{duration:0.3}}
+            className='text-[124px] rounded-xl text-shadow color-4 w-fit px-4 shadow-solid text-[#874170] -tracking-widest font-bold'>
               Chelsea & lil's
             </motion.h1>
             <motion.h1
-            whileHover={{x:-100}}
+            whileHover={{backgroundColor: '#58cbb8', color: '#d1ff91'}}
             animate={{opacity:1, y:0}}
             initial={{opacity:0,y:50}}
-            transition={{duration:0.8, delay:0.2, type:'spring', stiffness:200}}
-            className='text-[120px] text-shadow color-1 w-fit px-4 shadow-solid text-[#58cbb8] poppins -tracking-widest font-semibold'>
+            transition={{duration:0.8, type:'spring', stiffness:200}}
+            className='text-[120px] rounded-xl text-shadow color-1 w-fit px-4 shadow-solid text-[#58cbb8] poppins -tracking-widest font-semibold'>
               stoop sale @
             </motion.h1>
 
-            <div className='flex flex-col self-end'>
-                <h1 className='flex items-center text-[#ef0041] text-3xl font-bold'>
+            <div className='flex flex-col relative'>
+                {/* <h1 className='flex items-center text-[#ef0041] text-3xl font-bold'>
                   <motion.img
                   initial={{y:-10}}
                   animate={{y:0}}
@@ -69,7 +69,15 @@ const Landing = () => {
                   transition={{type:'spring', delay:0.4,  repeat:Infinity, repeatType:'reverse'}}
                   className='w-20' src="/clock.png" alt="" />
                   10am onwards
-                </h1>
+                </h1> */}
+                <motion.button 
+                  whileHover={{x:-30}}
+                  initial={{y:-10}}
+                  animate={{y:0}}
+                  transition={{duration:0.2,type:'spring', delay:0.4,  repeat:Infinity, repeatType:'reverse'}}
+                  className=' hover:text-pink-500 hover:bg-white transition-all duration-200 text-3xl rounded-xl text-white font-semibold right-0 bottom-5 color-2 shadow-solid p-5'>
+                  Upcoming Events
+                </motion.button>
             </div>
         </section>
     </div>
